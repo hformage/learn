@@ -1,0 +1,1310 @@
+
+======================================================================
+  check_mode1.py 诊断开始
+======================================================================
+[2026-05-29 17:00:11] 诊断目标: tag=shiraiyu, replace_tag=shiraiyu
+[2026-05-29 17:00:11] 保存目录: F:\Pic\Gelbooru\shiraiyu
+[2026-05-29 17:00:11] 配置文件: F:\python\downgelbooru\default.json
+[2026-05-29 17:00:11] BASE_URL: https://gelbooru.com/index.php?page=post&s=list&tags=
+[2026-05-29 17:00:11] HEADERS: {
+  "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0",
+  "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"
+}
+[2026-05-29 17:00:11] Python版本: 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)]
+[2026-05-29 17:00:11] requests版本: 2.31.0
+
+======================================================================
+  MODE 1 诊断: tag=shiraiyu
+======================================================================
+[2026-05-29 17:00:11] 列表页URL: https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu+-futanari+-xiao_(genshin_impact)+-azarashi_(kkuh3353)+-furry+-arlecchino_(genshin_impact)+-clorinde_(genshin_impact)+-emilie_(genshin_impact)+-zhezhi_(wuthering_waves)+-matou_sakura+-dairi+-jinx_(league_of_legends)
+
+======================================================================
+  步骤1: 获取列表页
+======================================================================
+[2026-05-29 17:00:11]   [列表页] 请求URL: https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu+-futanari+-xiao_(genshin_impact)+-azarashi_(kkuh3353)+-furry+-arlecchino_(genshin_impact)+-clorinde_(genshin_impact)+-emilie_(genshin_impact)+-zhezhi_(wuthering_waves)+-matou_sakura+-dairi+-jinx_(league_of_legends)
+[2026-05-29 17:00:11]   [列表页] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:00:17]   [列表页] 状态码: 200
+[2026-05-29 17:00:17]   [列表页] 耗时: 5.10s
+[2026-05-29 17:00:17]   [列表页] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:00:17]   [列表页] Content-Length: N/A
+[2026-05-29 17:00:17]   [列表页] Server: nginx/1.22.1
+[2026-05-29 17:00:17]   [列表页] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:00:16 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:00:16 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:00:17]   [列表页] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:00:17]   [列表页] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:00:17] 列表页HTML大小: 53013 字符
+[2026-05-29 17:00:17] 找到 <article> 元素: 17 个
+[2026-05-29 17:00:17] 提取到图片链接: 17 个
+[2026-05-29 17:00:17]   图片1: id=14177374 href=https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:17]   图片2: id=12801038 href=https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:17]   图片3: id=12797804 href=https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:17]   图片4: id=12738479 href=https://gelbooru.com/index.php?page=post&s=view&id=12738479&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:17]   图片5: id=12242864 href=https://gelbooru.com/index.php?page=post&s=view&id=12242864&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+
+======================================================================
+  步骤2.1: 下载图片 #1 (id=14177374)
+======================================================================
+[2026-05-29 17:00:17] 详情页URL: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:17]   [详情页] 请求URL: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:17]   [详情页] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:00:17]   [详情页] 状态码: 200
+[2026-05-29 17:00:17]   [详情页] 耗时: 0.71s
+[2026-05-29 17:00:17]   [详情页] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:00:17]   [详情页] Content-Length: N/A
+[2026-05-29 17:00:17]   [详情页] Server: nginx/1.22.1
+[2026-05-29 17:00:17]   [详情页] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:00:17 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:00:17 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:00:17]   [详情页] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:00:17]   [详情页] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:00:17] 提取元数据:
+[2026-05-29 17:00:17]   Posted原始文本: 'Posted: 2026-05-29 03:15:07'
+[2026-05-29 17:00:17]   pic_time: 2026-05-29 03:15:07
+[2026-05-29 17:00:17]   Id原始文本: 'Id: 14177374'
+[2026-05-29 17:00:17]   pic_id: 14177374
+[2026-05-29 17:00:17]   Original image链接: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:00:17]   pic_tags(from title): shiraiyu, kisaki (blue archive), blue archive, absurdres, commentary request, highres, 1girl, afloat...
+[2026-05-29 17:00:17]   og:image URL: https://img2.gelbooru.com//images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:00:17]   pic_filename: 559dabf39b9f8402ec8866c63ea0c311.jpg
+
+======================================================================
+  步骤3.1: 下载图片文件
+======================================================================
+[2026-05-29 17:00:17] 图片下载URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:00:17]   --- 方法1: 标准下载(带Referer) ---
+[2026-05-29 17:00:17]   [方法1] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:00:17]   [方法1] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:00:17]   [方法1] Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:49]   [方法1] ✗ 连接错误: HTTPSConnectionPool(host='img2.gelbooru.com', port=443): Read timed out.
+[2026-05-29 17:00:49]   --- 方法2: 不带Referer ---
+[2026-05-29 17:00:49]   [方法2] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:00:49]   [方法2] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:00:52]   [方法2] 状态码: 200
+[2026-05-29 17:00:52]   [方法2] 耗时: 3.34s
+[2026-05-29 17:00:52]   [方法2] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:00:52]   [方法2] Content-Length: N/A
+[2026-05-29 17:00:52]   [方法2] Server: nginx/1.22.1
+[2026-05-29 17:00:52]   [方法2] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:00:51 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:00:51 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:00:52]   [方法2] 重定向链 (2 次):
+    302 -> https://gelbooru.com/hotlink.php?hash=/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+    302 -> index.php?page=post&s=view&id=14177374
+[2026-05-29 17:00:52]   [方法2] 最终URL: https://gelbooru.com/index.php?page=post&s=view&id=14177374
+[2026-05-29 17:00:52]   [方法2] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:00:52]   [方法2] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:00:52]   [方法2] 内容长度: 46445 bytes
+[2026-05-29 17:00:52]   [方法2] 前200字节(UTF-8): '<!DOCTYPE html><html lang="en">\n\t<head>\n\t\t<meta charset="UTF-8">\n\t\t<title>shiraiyu, kisaki (blue archive), blue archive, absurdres, commentary request, highres, 1girl, afloat, alternate costume, armpi'
+[2026-05-29 17:00:52]   [方法2] ⚠ 内容以HTML标记开头!
+[2026-05-29 17:00:52]   [方法2] ⚠ 前500字节中包含<html>标记!
+[2026-05-29 17:00:52]   [方法2] ⚠ 前500字节中包含<head>标记!
+[2026-05-29 17:00:52]   [方法2] 检测文件类型: UNKNOWN
+[2026-05-29 17:00:52]   [方法2] 是否为HTML: True
+[2026-05-29 17:00:52]   [方法2] HTML标题: shiraiyu, kisaki (blue archive), blue archive, absurdres, commentary request, highres, 1girl, afloat, alternate costume, armpit crease, bare arms, bare legs, bare shoulders, beach, bikini, black hair, blush, breasts, brown hat, butterfly hair ornament, closed mouth, collarbone, cowboy shot, day, double bun, fingernails, front-tie bikini top, front-tie top, grey bikini, grey eyes, hair bun, hair ornament, halo, hat, innertube, long hair, navel, on innertube, outdoors, partially submerged, side-tie bikini bottom, small breasts, smile, solo, starfish, stomach, straw hat, string bikini, sun hat, swim ring, swimsuit, twintails, untying, water, wet, white halo - Image View -  | Gelbooru - Anime Art & Hentai Gallery - Free to Explore
+  [方法2] HTML前500字符:
+<!DOCTYPE html><html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>shiraiyu, kisaki (blue archive), blue archive, absurdres, commentary request, highres, 1girl, afloat, alternate costume, armpit crease, bare arms, bare legs, bare shoulders, beach, bikini, black hair, blush, breasts, brown hat, butterfly hair ornament, closed mouth, collarbone, cowboy shot, day, double bun, fingernails, front-tie bikini top, front-tie top, grey bikini, grey eyes, hair bun, hair ornament, halo, hat, innertu
+[2026-05-29 17:00:52]   --- 方法3: 全新Session ---
+[2026-05-29 17:00:52]   [方法3] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:00:52]   [方法3] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:00:52]   [方法3] Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:56]   [方法3] 状态码: 200
+[2026-05-29 17:00:56]   [方法3] 耗时: 3.85s
+[2026-05-29 17:00:56]   [方法3] Content-Type: image/jpeg
+[2026-05-29 17:00:56]   [方法3] Content-Length: 7068643
+[2026-05-29 17:00:56]   [方法3] Server: nginx/1.22.1
+[2026-05-29 17:00:56]   [方法3] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:00:54 GMT
+    Content-Type: image/jpeg
+    Content-Length: 7068643
+    Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:00:56]   [方法3] 响应Cookies: {}
+[2026-05-29 17:00:56]   [方法3] Session Cookies: {}
+[2026-05-29 17:00:56]   [方法3] 内容长度: 7068643 bytes
+[2026-05-29 17:00:56]   [方法3] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:00:56]   [方法3] 检测文件类型: JPEG
+[2026-05-29 17:00:56]   [方法3] 是否为HTML: False
+[2026-05-29 17:00:56]   --- 方法4: 模拟浏览器图片请求(Accept: image/*) ---
+[2026-05-29 17:00:56]   [方法4] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:00:56]   [方法4] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29", "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "en-US,en;q=0.9"}
+[2026-05-29 17:00:56]   [方法4] Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:00:58]   [方法4] 状态码: 200
+[2026-05-29 17:00:58]   [方法4] 耗时: 2.30s
+[2026-05-29 17:00:58]   [方法4] Content-Type: image/jpeg
+[2026-05-29 17:00:58]   [方法4] Content-Length: 7068643
+[2026-05-29 17:00:58]   [方法4] Server: nginx/1.22.1
+[2026-05-29 17:00:58]   [方法4] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:00:56 GMT
+    Content-Type: image/jpeg
+    Content-Length: 7068643
+    Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:00:58]   [方法4] 响应Cookies: {}
+[2026-05-29 17:00:58]   [方法4] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:00:58]   [方法4] 内容长度: 7068643 bytes
+[2026-05-29 17:00:58]   [方法4] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:00:58]   [方法4] 检测文件类型: JPEG
+[2026-05-29 17:00:58]   [方法4] 是否为HTML: False
+[2026-05-29 17:00:58]   --- 方法5: 不带Cookie ---
+[2026-05-29 17:00:58]   [方法5] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:00:58]   [方法5] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:00:58]   [方法5] Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:01:49]   [方法5] ✗ 连接错误: HTTPSConnectionPool(host='img2.gelbooru.com', port=443): Read timed out.
+[2026-05-29 17:01:49]   --- 方法6: Stream模式下载 ---
+[2026-05-29 17:01:49]   [方法6] 状态码: 200
+[2026-05-29 17:01:49]   [方法6] Content-Type: image/jpeg
+[2026-05-29 17:01:49]   [方法6] Content-Length: 7068643
+[2026-05-29 17:01:51]   [方法6] 实际接收: 7068643 bytes, 耗时: 2.29s
+[2026-05-29 17:01:51]   [方法6] 内容长度: 7068643 bytes
+[2026-05-29 17:01:51]   [方法6] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:01:51]   [方法6] 检测文件类型: JPEG
+[2026-05-29 17:01:51]   [方法6] 是否为HTML: False
+
+======================================================================
+  各方法下载结果汇总
+======================================================================
+[2026-05-29 17:01:51]   方法2_无Referer: ✗ HTML内容 | 类型=UNKNOWN | 大小=46445 bytes
+[2026-05-29 17:01:51]     已保存: CHECK_方法2_无Referer_mode1_559dabf39b9f8402ec8866c63ea0c311.jpg.html
+[2026-05-29 17:01:51]   方法3_新Session: ✓ 正常图片 | 类型=JPEG | 大小=7068643 bytes
+[2026-05-29 17:01:51]     已保存: CHECK_方法3_新Session_mode1_559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:01:51]   方法4_Accept_image: ✓ 正常图片 | 类型=JPEG | 大小=7068643 bytes
+[2026-05-29 17:01:51]     已保存: CHECK_方法4_Accept_image_mode1_559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:01:51]   方法6_Stream: ✓ 正常图片 | 类型=JPEG | 大小=7068643 bytes
+[2026-05-29 17:01:51]     已保存: CHECK_方法6_Stream_mode1_559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:01:51] ✓ Mode1 图片1下载成功 (使用方法3_新Session), 大小=7068643 bytes
+
+======================================================================
+  步骤2.2: 下载图片 #2 (id=12801038)
+======================================================================
+[2026-05-29 17:01:52] 详情页URL: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:01:52]   [详情页] 请求URL: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:01:52]   [详情页] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:01:54]   [详情页] 状态码: 200
+[2026-05-29 17:01:54]   [详情页] 耗时: 2.02s
+[2026-05-29 17:01:54]   [详情页] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:01:54]   [详情页] Content-Length: N/A
+[2026-05-29 17:01:54]   [详情页] Server: nginx/1.22.1
+[2026-05-29 17:01:54]   [详情页] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:01:54 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:01:54 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:01:54]   [详情页] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:01:54]   [详情页] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:01:54] 提取元数据:
+[2026-05-29 17:01:54]   Posted原始文本: 'Posted: 2025-10-15 14:15:08'
+[2026-05-29 17:01:54]   pic_time: 2025-10-15 14:15:08
+[2026-05-29 17:01:54]   Id原始文本: 'Id: 12801038'
+[2026-05-29 17:01:54]   pic_id: 12801038
+[2026-05-29 17:01:54]   Original image链接: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:01:54]   pic_tags(from title): shiraiyu, megumin, kono subarashii sekai ni shukufuku wo!, absurdres, commentary, highres, 1girl, :o...
+[2026-05-29 17:01:54]   og:image URL: https://img2.gelbooru.com//images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:01:54]   pic_filename: 734764492c185ea06435bce6160fde3c.jpg
+
+======================================================================
+  步骤3.2: 下载图片文件
+======================================================================
+[2026-05-29 17:01:54] 图片下载URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:01:54]   --- 方法1: 标准下载(带Referer) ---
+[2026-05-29 17:01:54]   [方法1] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:01:54]   [方法1] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:01:54]   [方法1] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:01:56]   [方法1] 状态码: 200
+[2026-05-29 17:01:56]   [方法1] 耗时: 1.66s
+[2026-05-29 17:01:56]   [方法1] Content-Type: image/jpeg
+[2026-05-29 17:01:56]   [方法1] Content-Length: 2293780
+[2026-05-29 17:01:56]   [方法1] Server: nginx/1.22.1
+[2026-05-29 17:01:56]   [方法1] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:01:54 GMT
+    Content-Type: image/jpeg
+    Content-Length: 2293780
+    Last-Modified: Wed, 15 Oct 2025 19:15:08 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:01:56]   [方法1] 响应Cookies: {}
+[2026-05-29 17:01:56]   [方法1] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:01:56]   [方法1] 内容长度: 2293780 bytes
+[2026-05-29 17:01:56]   [方法1] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:01:56]   [方法1] 检测文件类型: JPEG
+[2026-05-29 17:01:56]   [方法1] 是否为HTML: False
+[2026-05-29 17:01:56]   --- 方法2: 不带Referer ---
+[2026-05-29 17:01:56]   [方法2] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:01:56]   [方法2] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:01:57]   [方法2] 状态码: 200
+[2026-05-29 17:01:57]   [方法2] 耗时: 1.34s
+[2026-05-29 17:01:57]   [方法2] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:01:57]   [方法2] Content-Length: N/A
+[2026-05-29 17:01:57]   [方法2] Server: nginx/1.22.1
+[2026-05-29 17:01:57]   [方法2] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:01:57 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:01:57 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:01:57]   [方法2] 重定向链 (2 次):
+    302 -> https://gelbooru.com/hotlink.php?hash=/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+    302 -> index.php?page=post&s=view&id=12801038
+[2026-05-29 17:01:57]   [方法2] 最终URL: https://gelbooru.com/index.php?page=post&s=view&id=12801038
+[2026-05-29 17:01:57]   [方法2] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:01:57]   [方法2] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:01:57]   [方法2] 内容长度: 33879 bytes
+[2026-05-29 17:01:57]   [方法2] 前200字节(UTF-8): '<!DOCTYPE html><html lang="en">\n\t<head>\n\t\t<meta charset="UTF-8">\n\t\t<title>shiraiyu, megumin, kono subarashii sekai ni shukufuku wo!, absurdres, commentary, highres, 1girl, :o, bandaged leg, bandages, '
+[2026-05-29 17:01:57]   [方法2] ⚠ 内容以HTML标记开头!
+[2026-05-29 17:01:57]   [方法2] ⚠ 前500字节中包含<html>标记!
+[2026-05-29 17:01:57]   [方法2] ⚠ 前500字节中包含<head>标记!
+[2026-05-29 17:01:57]   [方法2] 检测文件类型: UNKNOWN
+[2026-05-29 17:01:57]   [方法2] 是否为HTML: True
+[2026-05-29 17:01:57]   [方法2] HTML标题: shiraiyu, megumin, kono subarashii sekai ni shukufuku wo!, absurdres, commentary, highres, 1girl, :o, bandaged leg, bandages, bare shoulders, belt, black belt, black thighhighs, blunt bangs, blush, brown hair, collarbone, dress, feet out of frame, hair between eyes, hugging own legs, knees together feet apart, legs up, loli, long sleeves, looking at viewer, lying, missing headwear, off-shoulder dress, off shoulder, on back, open mouth, red dress, red eyes, short dress, short hair with long locks, simple background, single thighhigh, solo, thighhighs, thighs, white background, wide sleeves, zettai ryouiki - Image View -  | Gelbooru - Anime Art & Hentai Gallery - Free to Explore
+  [方法2] HTML前500字符:
+<!DOCTYPE html><html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>shiraiyu, megumin, kono subarashii sekai ni shukufuku wo!, absurdres, commentary, highres, 1girl, :o, bandaged leg, bandages, bare shoulders, belt, black belt, black thighhighs, blunt bangs, blush, brown hair, collarbone, dress, feet out of frame, hair between eyes, hugging own legs, knees together feet apart, legs up, loli, long sleeves, looking at viewer, lying, missing headwear, off-shoulder dress, off shoulder, on back
+[2026-05-29 17:01:57]   --- 方法3: 全新Session ---
+[2026-05-29 17:01:57]   [方法3] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:01:57]   [方法3] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:01:57]   [方法3] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:02]   [方法3] 状态码: 200
+[2026-05-29 17:02:02]   [方法3] 耗时: 4.95s
+[2026-05-29 17:02:02]   [方法3] Content-Type: image/jpeg
+[2026-05-29 17:02:02]   [方法3] Content-Length: 2293780
+[2026-05-29 17:02:02]   [方法3] Server: nginx/1.22.1
+[2026-05-29 17:02:02]   [方法3] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:01:59 GMT
+    Content-Type: image/jpeg
+    Content-Length: 2293780
+    Last-Modified: Wed, 15 Oct 2025 19:15:08 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:02]   [方法3] 响应Cookies: {}
+[2026-05-29 17:02:02]   [方法3] Session Cookies: {}
+[2026-05-29 17:02:02]   [方法3] 内容长度: 2293780 bytes
+[2026-05-29 17:02:02]   [方法3] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:02:02]   [方法3] 检测文件类型: JPEG
+[2026-05-29 17:02:02]   [方法3] 是否为HTML: False
+[2026-05-29 17:02:02]   --- 方法4: 模拟浏览器图片请求(Accept: image/*) ---
+[2026-05-29 17:02:02]   [方法4] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:02:02]   [方法4] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29", "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "en-US,en;q=0.9"}
+[2026-05-29 17:02:02]   [方法4] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:04]   [方法4] 状态码: 200
+[2026-05-29 17:02:04]   [方法4] 耗时: 1.89s
+[2026-05-29 17:02:04]   [方法4] Content-Type: image/jpeg
+[2026-05-29 17:02:04]   [方法4] Content-Length: 2293780
+[2026-05-29 17:02:04]   [方法4] Server: nginx/1.22.1
+[2026-05-29 17:02:04]   [方法4] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:02 GMT
+    Content-Type: image/jpeg
+    Content-Length: 2293780
+    Last-Modified: Wed, 15 Oct 2025 19:15:08 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:04]   [方法4] 响应Cookies: {}
+[2026-05-29 17:02:04]   [方法4] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:04]   [方法4] 内容长度: 2293780 bytes
+[2026-05-29 17:02:04]   [方法4] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:02:04]   [方法4] 检测文件类型: JPEG
+[2026-05-29 17:02:04]   [方法4] 是否为HTML: False
+[2026-05-29 17:02:04]   --- 方法5: 不带Cookie ---
+[2026-05-29 17:02:04]   [方法5] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:02:04]   [方法5] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:02:04]   [方法5] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:07]   [方法5] 状态码: 200
+[2026-05-29 17:02:07]   [方法5] 耗时: 3.27s
+[2026-05-29 17:02:07]   [方法5] Content-Type: image/jpeg
+[2026-05-29 17:02:07]   [方法5] Content-Length: 2293780
+[2026-05-29 17:02:07]   [方法5] Server: nginx/1.22.1
+[2026-05-29 17:02:07]   [方法5] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:05 GMT
+    Content-Type: image/jpeg
+    Content-Length: 2293780
+    Last-Modified: Wed, 15 Oct 2025 19:15:08 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:07]   [方法5] 响应Cookies: {}
+[2026-05-29 17:02:07]   [方法5] Session Cookies: {}
+[2026-05-29 17:02:07]   [方法5] 内容长度: 2293780 bytes
+[2026-05-29 17:02:07]   [方法5] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:02:07]   [方法5] 检测文件类型: JPEG
+[2026-05-29 17:02:07]   [方法5] 是否为HTML: False
+[2026-05-29 17:02:07]   --- 方法6: Stream模式下载 ---
+[2026-05-29 17:02:08]   [方法6] 状态码: 200
+[2026-05-29 17:02:08]   [方法6] Content-Type: image/jpeg
+[2026-05-29 17:02:08]   [方法6] Content-Length: 2293780
+[2026-05-29 17:02:09]   [方法6] 实际接收: 2293780 bytes, 耗时: 1.86s
+[2026-05-29 17:02:09]   [方法6] 内容长度: 2293780 bytes
+[2026-05-29 17:02:09]   [方法6] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:02:09]   [方法6] 检测文件类型: JPEG
+[2026-05-29 17:02:09]   [方法6] 是否为HTML: False
+
+======================================================================
+  各方法下载结果汇总
+======================================================================
+[2026-05-29 17:02:09]   方法1_标准Referer: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:02:09]     已保存: CHECK_方法1_标准Referer_mode1_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:02:09]   方法2_无Referer: ✗ HTML内容 | 类型=UNKNOWN | 大小=33879 bytes
+[2026-05-29 17:02:09]     已保存: CHECK_方法2_无Referer_mode1_734764492c185ea06435bce6160fde3c.jpg.html
+[2026-05-29 17:02:09]   方法3_新Session: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:02:09]     已保存: CHECK_方法3_新Session_mode1_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:02:09]   方法4_Accept_image: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:02:09]     已保存: CHECK_方法4_Accept_image_mode1_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:02:09]   方法5_无Cookie: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:02:09]     已保存: CHECK_方法5_无Cookie_mode1_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:02:09]   方法6_Stream: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:02:09]     已保存: CHECK_方法6_Stream_mode1_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:02:09] ✓ Mode1 图片2下载成功 (使用方法1_标准Referer), 大小=2293780 bytes
+
+======================================================================
+  步骤2.3: 下载图片 #3 (id=12797804)
+======================================================================
+[2026-05-29 17:02:10] 详情页URL: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:10]   [详情页] 请求URL: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:10]   [详情页] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:02:11]   [详情页] 状态码: 200
+[2026-05-29 17:02:11]   [详情页] 耗时: 0.88s
+[2026-05-29 17:02:11]   [详情页] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:02:11]   [详情页] Content-Length: N/A
+[2026-05-29 17:02:11]   [详情页] Server: nginx/1.22.1
+[2026-05-29 17:02:11]   [详情页] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:10 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:02:10 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:02:11]   [详情页] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:11]   [详情页] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:11] 提取元数据:
+[2026-05-29 17:02:11]   Posted原始文本: 'Posted: 2025-10-14 20:45:37'
+[2026-05-29 17:02:11]   pic_time: 2025-10-14 20:45:37
+[2026-05-29 17:02:11]   Id原始文本: 'Id: 12797804'
+[2026-05-29 17:02:11]   pic_id: 12797804
+[2026-05-29 17:02:11]   Original image链接: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:11]   pic_tags(from title): shiraiyu, seia (blue archive), seia (swimsuit) (blue archive), blue archive, absurdres, commentary, ...
+[2026-05-29 17:02:11]   og:image URL: https://img2.gelbooru.com//images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:11]   pic_filename: f0e56592956938b26f680fcb88b85fa7.jpg
+
+======================================================================
+  步骤3.3: 下载图片文件
+======================================================================
+[2026-05-29 17:02:11] 图片下载URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:11]   --- 方法1: 标准下载(带Referer) ---
+[2026-05-29 17:02:11]   [方法1] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:11]   [方法1] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:02:11]   [方法1] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:12]   [方法1] 状态码: 200
+[2026-05-29 17:02:12]   [方法1] 耗时: 1.46s
+[2026-05-29 17:02:12]   [方法1] Content-Type: image/jpeg
+[2026-05-29 17:02:12]   [方法1] Content-Length: 4433945
+[2026-05-29 17:02:12]   [方法1] Server: nginx/1.22.1
+[2026-05-29 17:02:12]   [方法1] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:11 GMT
+    Content-Type: image/jpeg
+    Content-Length: 4433945
+    Last-Modified: Wed, 15 Oct 2025 01:45:36 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:12]   [方法1] 响应Cookies: {}
+[2026-05-29 17:02:12]   [方法1] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:12]   [方法1] 内容长度: 4433945 bytes
+[2026-05-29 17:02:12]   [方法1] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:02:12]   [方法1] 检测文件类型: JPEG
+[2026-05-29 17:02:12]   [方法1] 是否为HTML: False
+[2026-05-29 17:02:12]   --- 方法2: 不带Referer ---
+[2026-05-29 17:02:12]   [方法2] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:12]   [方法2] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:02:15]   [方法2] 状态码: 200
+[2026-05-29 17:02:15]   [方法2] 耗时: 2.57s
+[2026-05-29 17:02:15]   [方法2] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:02:15]   [方法2] Content-Length: N/A
+[2026-05-29 17:02:15]   [方法2] Server: nginx/1.22.1
+[2026-05-29 17:02:15]   [方法2] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:14 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:02:14 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:02:15]   [方法2] 重定向链 (2 次):
+    302 -> https://gelbooru.com/hotlink.php?hash=/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+    302 -> index.php?page=post&s=view&id=12797804
+[2026-05-29 17:02:15]   [方法2] 最终URL: https://gelbooru.com/index.php?page=post&s=view&id=12797804
+[2026-05-29 17:02:15]   [方法2] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:15]   [方法2] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:15]   [方法2] 内容长度: 52020 bytes
+[2026-05-29 17:02:15]   [方法2] 前200字节(UTF-8): '<!DOCTYPE html><html lang="en">\n\t<head>\n\t\t<meta charset="UTF-8">\n\t\t<title>shiraiyu, seia (blue archive), seia (swimsuit) (blue archive), blue archive, absurdres, commentary, highres, 1girl, absurdly l'
+[2026-05-29 17:02:15]   [方法2] ⚠ 内容以HTML标记开头!
+[2026-05-29 17:02:15]   [方法2] ⚠ 前500字节中包含<html>标记!
+[2026-05-29 17:02:15]   [方法2] ⚠ 前500字节中包含<head>标记!
+[2026-05-29 17:02:15]   [方法2] 检测文件类型: UNKNOWN
+[2026-05-29 17:02:15]   [方法2] 是否为HTML: True
+[2026-05-29 17:02:15]   [方法2] HTML标题: shiraiyu, seia (blue archive), seia (swimsuit) (blue archive), blue archive, absurdres, commentary, highres, 1girl, absurdly long tail, adjusting eyewear, animal ear fluff, animal ears, bare legs, bare shoulders, beach, blonde hair, blue sky, breasts, bright pupils, cameltoe, casual one-piece swimsuit, clothing cutout, cloud, collarbone, covered navel, cross halo, day, diamond cutout, dot nose, extra ears, eyelashes, forehead, fox ears, fox girl, fox tail, full body, gluteal fold, gradient eyes, hair ornament, hair over one eye, halo, hand up, hands up, highleg, highleg one-piece swimsuit, jacket, jacket partially removed, loli, long hair, long sidelocks, long sleeves, looking at viewer, multicolored eyes, ocean, off shoulder, offering hand, official alternate costume, official alternate hairstyle, one-piece swimsuit, one eye covered, open clothes, open jacket, open mouth, outdoors, outstretched hand, pink-tinted eyewear, pink eyes, reaching, reaching towards viewer, sandals, side ponytail, sidelocks, sky, small breasts, smile, solo, sparkle, standing, star (symbol), star hair ornament, star ornament, sunglasses, sunlight, swimsuit, tail, tail ornament, thighs, tinted eyewear, very long hair, very long tail, visor cap, wavy hair, wet, wet clothes, white one-piece swimsuit, white pupils, yellow-framed eyewear, yellow halo, yellow jacket, yellow sandals, yellow visor - Image View -  | Gelbooru - Anime Art & Hentai Gallery - Free to Explore
+  [方法2] HTML前500字符:
+<!DOCTYPE html><html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>shiraiyu, seia (blue archive), seia (swimsuit) (blue archive), blue archive, absurdres, commentary, highres, 1girl, absurdly long tail, adjusting eyewear, animal ear fluff, animal ears, bare legs, bare shoulders, beach, blonde hair, blue sky, breasts, bright pupils, cameltoe, casual one-piece swimsuit, clothing cutout, cloud, collarbone, covered navel, cross halo, day, diamond cutout, dot nose, extra ears, eyelashes, foreh
+[2026-05-29 17:02:15]   --- 方法3: 全新Session ---
+[2026-05-29 17:02:15]   [方法3] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:15]   [方法3] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:02:15]   [方法3] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:18]   [方法3] 状态码: 200
+[2026-05-29 17:02:18]   [方法3] 耗时: 3.36s
+[2026-05-29 17:02:18]   [方法3] Content-Type: image/jpeg
+[2026-05-29 17:02:18]   [方法3] Content-Length: 4433945
+[2026-05-29 17:02:18]   [方法3] Server: nginx/1.22.1
+[2026-05-29 17:02:18]   [方法3] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:16 GMT
+    Content-Type: image/jpeg
+    Content-Length: 4433945
+    Last-Modified: Wed, 15 Oct 2025 01:45:36 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:18]   [方法3] 响应Cookies: {}
+[2026-05-29 17:02:18]   [方法3] Session Cookies: {}
+[2026-05-29 17:02:18]   [方法3] 内容长度: 4433945 bytes
+[2026-05-29 17:02:18]   [方法3] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:02:18]   [方法3] 检测文件类型: JPEG
+[2026-05-29 17:02:18]   [方法3] 是否为HTML: False
+[2026-05-29 17:02:18]   --- 方法4: 模拟浏览器图片请求(Accept: image/*) ---
+[2026-05-29 17:02:18]   [方法4] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:18]   [方法4] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29", "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "en-US,en;q=0.9"}
+[2026-05-29 17:02:18]   [方法4] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:20]   [方法4] 状态码: 200
+[2026-05-29 17:02:20]   [方法4] 耗时: 2.13s
+[2026-05-29 17:02:20]   [方法4] Content-Type: image/jpeg
+[2026-05-29 17:02:20]   [方法4] Content-Length: 4433945
+[2026-05-29 17:02:20]   [方法4] Server: nginx/1.22.1
+[2026-05-29 17:02:20]   [方法4] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:19 GMT
+    Content-Type: image/jpeg
+    Content-Length: 4433945
+    Last-Modified: Wed, 15 Oct 2025 01:45:36 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:20]   [方法4] 响应Cookies: {}
+[2026-05-29 17:02:20]   [方法4] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:20]   [方法4] 内容长度: 4433945 bytes
+[2026-05-29 17:02:20]   [方法4] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:02:20]   [方法4] 检测文件类型: JPEG
+[2026-05-29 17:02:20]   [方法4] 是否为HTML: False
+[2026-05-29 17:02:20]   --- 方法5: 不带Cookie ---
+[2026-05-29 17:02:20]   [方法5] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:20]   [方法5] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:02:20]   [方法5] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:24]   [方法5] 状态码: 200
+[2026-05-29 17:02:24]   [方法5] 耗时: 3.26s
+[2026-05-29 17:02:24]   [方法5] Content-Type: image/jpeg
+[2026-05-29 17:02:24]   [方法5] Content-Length: 4433945
+[2026-05-29 17:02:24]   [方法5] Server: nginx/1.22.1
+[2026-05-29 17:02:24]   [方法5] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:22 GMT
+    Content-Type: image/jpeg
+    Content-Length: 4433945
+    Last-Modified: Wed, 15 Oct 2025 01:45:36 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:24]   [方法5] 响应Cookies: {}
+[2026-05-29 17:02:24]   [方法5] Session Cookies: {}
+[2026-05-29 17:02:24]   [方法5] 内容长度: 4433945 bytes
+[2026-05-29 17:02:24]   [方法5] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:02:24]   [方法5] 检测文件类型: JPEG
+[2026-05-29 17:02:24]   [方法5] 是否为HTML: False
+[2026-05-29 17:02:24]   --- 方法6: Stream模式下载 ---
+[2026-05-29 17:02:24]   [方法6] 状态码: 200
+[2026-05-29 17:02:24]   [方法6] Content-Type: image/jpeg
+[2026-05-29 17:02:24]   [方法6] Content-Length: 4433945
+[2026-05-29 17:02:26]   [方法6] 实际接收: 4433945 bytes, 耗时: 2.08s
+[2026-05-29 17:02:26]   [方法6] 内容长度: 4433945 bytes
+[2026-05-29 17:02:26]   [方法6] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:02:26]   [方法6] 检测文件类型: JPEG
+[2026-05-29 17:02:26]   [方法6] 是否为HTML: False
+
+======================================================================
+  各方法下载结果汇总
+======================================================================
+[2026-05-29 17:02:26]   方法1_标准Referer: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:02:26]     已保存: CHECK_方法1_标准Referer_mode1_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:26]   方法2_无Referer: ✗ HTML内容 | 类型=UNKNOWN | 大小=52020 bytes
+[2026-05-29 17:02:26]     已保存: CHECK_方法2_无Referer_mode1_f0e56592956938b26f680fcb88b85fa7.jpg.html
+[2026-05-29 17:02:26]   方法3_新Session: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:02:26]     已保存: CHECK_方法3_新Session_mode1_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:26]   方法4_Accept_image: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:02:26]     已保存: CHECK_方法4_Accept_image_mode1_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:26]   方法5_无Cookie: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:02:26]     已保存: CHECK_方法5_无Cookie_mode1_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:26]   方法6_Stream: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:02:26]     已保存: CHECK_方法6_Stream_mode1_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:02:26] ✓ Mode1 图片3下载成功 (使用方法1_标准Referer), 大小=4433945 bytes
+[2026-05-29 17:02:27] 
+Mode 1 诊断完成: 成功 3/3
+
+======================================================================
+  MODE 3 诊断(对比): tag=shiraiyu
+======================================================================
+[2026-05-29 17:02:27] Mode3 列表页URL: https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu+-futanari+-xiao_(genshin_impact)+-azarashi_(kkuh3353)+-furry+-arlecchino_(genshin_impact)+-clorinde_(genshin_impact)+-emilie_(genshin_impact)+-zhezhi_(wuthering_waves)+-matou_sakura+-dairi+-jinx_(league_of_legends)
+[2026-05-29 17:02:27] 注意: Mode3 使用独立session实例（模拟 Downloader() 新建）
+[2026-05-29 17:02:27]   [Mode3列表页] 请求URL: https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu+-futanari+-xiao_(genshin_impact)+-azarashi_(kkuh3353)+-furry+-arlecchino_(genshin_impact)+-clorinde_(genshin_impact)+-emilie_(genshin_impact)+-zhezhi_(wuthering_waves)+-matou_sakura+-dairi+-jinx_(league_of_legends)
+[2026-05-29 17:02:27]   [Mode3列表页] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:02:29]   [Mode3列表页] 状态码: 200
+[2026-05-29 17:02:29]   [Mode3列表页] 耗时: 2.31s
+[2026-05-29 17:02:29]   [Mode3列表页] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:02:29]   [Mode3列表页] Content-Length: N/A
+[2026-05-29 17:02:29]   [Mode3列表页] Server: nginx/1.22.1
+[2026-05-29 17:02:29]   [Mode3列表页] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:29 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:02:29 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:02:29]   [Mode3列表页] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:29]   [Mode3列表页] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:29] Mode3 找到图片: 17 个
+[2026-05-29 17:02:29] 使用与Mode1相同的 3 张图片进行对比
+
+======================================================================
+  Mode3 图片 #1 (id=14177374)
+======================================================================
+[2026-05-29 17:02:29]   [Mode3详情页] 请求URL: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:29]   [Mode3详情页] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:02:30]   [Mode3详情页] 状态码: 200
+[2026-05-29 17:02:30]   [Mode3详情页] 耗时: 0.44s
+[2026-05-29 17:02:30]   [Mode3详情页] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:02:30]   [Mode3详情页] Content-Length: N/A
+[2026-05-29 17:02:30]   [Mode3详情页] Server: nginx/1.22.1
+[2026-05-29 17:02:30]   [Mode3详情页] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:29 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:02:29 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:02:30]   [Mode3详情页] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:30]   [Mode3详情页] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:30] 图片URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:02:30]   --- 方法1: 标准下载(带Referer) ---
+[2026-05-29 17:02:30]   [方法1] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:02:30]   [方法1] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:02:30]   [方法1] Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:33]   [方法1] 状态码: 200
+[2026-05-29 17:02:33]   [方法1] 耗时: 3.65s
+[2026-05-29 17:02:33]   [方法1] Content-Type: image/jpeg
+[2026-05-29 17:02:33]   [方法1] Content-Length: 7068643
+[2026-05-29 17:02:33]   [方法1] Server: nginx/1.22.1
+[2026-05-29 17:02:33]   [方法1] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:31 GMT
+    Content-Type: image/jpeg
+    Content-Length: 7068643
+    Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:33]   [方法1] 响应Cookies: {}
+[2026-05-29 17:02:33]   [方法1] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:33]   [方法1] 内容长度: 7068643 bytes
+[2026-05-29 17:02:33]   [方法1] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:02:33]   [方法1] 检测文件类型: JPEG
+[2026-05-29 17:02:33]   [方法1] 是否为HTML: False
+[2026-05-29 17:02:33]   --- 方法2: 不带Referer ---
+[2026-05-29 17:02:33]   [方法2] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:02:33]   [方法2] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:02:35]   [方法2] 状态码: 200
+[2026-05-29 17:02:35]   [方法2] 耗时: 2.01s
+[2026-05-29 17:02:35]   [方法2] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:02:35]   [方法2] Content-Length: N/A
+[2026-05-29 17:02:35]   [方法2] Server: nginx/1.22.1
+[2026-05-29 17:02:35]   [方法2] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:35 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:02:35 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:02:35]   [方法2] 重定向链 (2 次):
+    302 -> https://gelbooru.com/hotlink.php?hash=/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+    302 -> index.php?page=post&s=view&id=14177374
+[2026-05-29 17:02:35]   [方法2] 最终URL: https://gelbooru.com/index.php?page=post&s=view&id=14177374
+[2026-05-29 17:02:35]   [方法2] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:35]   [方法2] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:35]   [方法2] 内容长度: 46676 bytes
+[2026-05-29 17:02:35]   [方法2] 前200字节(UTF-8): '<!DOCTYPE html><html lang="en">\n\t<head>\n\t\t<meta charset="UTF-8">\n\t\t<title>shiraiyu, kisaki (blue archive), blue archive, absurdres, commentary request, highres, 1girl, afloat, alternate costume, armpi'
+[2026-05-29 17:02:35]   [方法2] ⚠ 内容以HTML标记开头!
+[2026-05-29 17:02:35]   [方法2] ⚠ 前500字节中包含<html>标记!
+[2026-05-29 17:02:35]   [方法2] ⚠ 前500字节中包含<head>标记!
+[2026-05-29 17:02:35]   [方法2] 检测文件类型: UNKNOWN
+[2026-05-29 17:02:35]   [方法2] 是否为HTML: True
+[2026-05-29 17:02:35]   [方法2] HTML标题: shiraiyu, kisaki (blue archive), blue archive, absurdres, commentary request, highres, 1girl, afloat, alternate costume, armpit crease, bare arms, bare legs, bare shoulders, beach, bikini, black hair, blush, breasts, brown hat, butterfly hair ornament, closed mouth, collarbone, cowboy shot, day, double bun, fingernails, front-tie bikini top, front-tie top, grey bikini, grey eyes, hair bun, hair ornament, halo, hat, innertube, long hair, navel, on innertube, outdoors, partially submerged, side-tie bikini bottom, small breasts, smile, solo, starfish, stomach, straw hat, string bikini, sun hat, swim ring, swimsuit, twintails, untying, water, wet, white halo - Image View -  | Gelbooru - Anime Art & Hentai Gallery - Free to Explore
+  [方法2] HTML前500字符:
+<!DOCTYPE html><html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>shiraiyu, kisaki (blue archive), blue archive, absurdres, commentary request, highres, 1girl, afloat, alternate costume, armpit crease, bare arms, bare legs, bare shoulders, beach, bikini, black hair, blush, breasts, brown hat, butterfly hair ornament, closed mouth, collarbone, cowboy shot, day, double bun, fingernails, front-tie bikini top, front-tie top, grey bikini, grey eyes, hair bun, hair ornament, halo, hat, innertu
+[2026-05-29 17:02:35]   --- 方法3: 全新Session ---
+[2026-05-29 17:02:35]   [方法3] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:02:35]   [方法3] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:02:35]   [方法3] Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:39]   [方法3] 状态码: 200
+[2026-05-29 17:02:39]   [方法3] 耗时: 3.44s
+[2026-05-29 17:02:39]   [方法3] Content-Type: image/jpeg
+[2026-05-29 17:02:39]   [方法3] Content-Length: 7068643
+[2026-05-29 17:02:39]   [方法3] Server: nginx/1.22.1
+[2026-05-29 17:02:39]   [方法3] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:37 GMT
+    Content-Type: image/jpeg
+    Content-Length: 7068643
+    Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:39]   [方法3] 响应Cookies: {}
+[2026-05-29 17:02:39]   [方法3] Session Cookies: {}
+[2026-05-29 17:02:39]   [方法3] 内容长度: 7068643 bytes
+[2026-05-29 17:02:39]   [方法3] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:02:39]   [方法3] 检测文件类型: JPEG
+[2026-05-29 17:02:39]   [方法3] 是否为HTML: False
+[2026-05-29 17:02:39]   --- 方法4: 模拟浏览器图片请求(Accept: image/*) ---
+[2026-05-29 17:02:39]   [方法4] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:02:39]   [方法4] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29", "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "en-US,en;q=0.9"}
+[2026-05-29 17:02:39]   [方法4] Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:02:41]   [方法4] 状态码: 200
+[2026-05-29 17:02:41]   [方法4] 耗时: 2.27s
+[2026-05-29 17:02:41]   [方法4] Content-Type: image/jpeg
+[2026-05-29 17:02:41]   [方法4] Content-Length: 7068643
+[2026-05-29 17:02:41]   [方法4] Server: nginx/1.22.1
+[2026-05-29 17:02:41]   [方法4] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:39 GMT
+    Content-Type: image/jpeg
+    Content-Length: 7068643
+    Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:02:41]   [方法4] 响应Cookies: {}
+[2026-05-29 17:02:41]   [方法4] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:02:41]   [方法4] 内容长度: 7068643 bytes
+[2026-05-29 17:02:41]   [方法4] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:02:41]   [方法4] 检测文件类型: JPEG
+[2026-05-29 17:02:41]   [方法4] 是否为HTML: False
+[2026-05-29 17:02:41]   --- 方法5: 不带Cookie ---
+[2026-05-29 17:02:41]   [方法5] 请求URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:02:41]   [方法5] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:02:41]   [方法5] Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:03:05]   [方法5] 状态码: 200
+[2026-05-29 17:03:05]   [方法5] 耗时: 24.31s
+[2026-05-29 17:03:05]   [方法5] Content-Type: image/jpeg
+[2026-05-29 17:03:05]   [方法5] Content-Length: 7068643
+[2026-05-29 17:03:05]   [方法5] Server: nginx/1.22.1
+[2026-05-29 17:03:05]   [方法5] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:02:43 GMT
+    Content-Type: image/jpeg
+    Content-Length: 7068643
+    Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:03:05]   [方法5] 响应Cookies: {}
+[2026-05-29 17:03:05]   [方法5] Session Cookies: {}
+[2026-05-29 17:03:05]   [方法5] 内容长度: 7068643 bytes
+[2026-05-29 17:03:05]   [方法5] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:03:05]   [方法5] 检测文件类型: JPEG
+[2026-05-29 17:03:05]   [方法5] 是否为HTML: False
+[2026-05-29 17:03:05]   --- 方法6: Stream模式下载 ---
+[2026-05-29 17:03:07]   [方法6] 状态码: 200
+[2026-05-29 17:03:07]   [方法6] Content-Type: image/jpeg
+[2026-05-29 17:03:07]   [方法6] Content-Length: 7068643
+[2026-05-29 17:03:10]   [方法6] 实际接收: 7068643 bytes, 耗时: 4.40s
+[2026-05-29 17:03:10]   [方法6] 内容长度: 7068643 bytes
+[2026-05-29 17:03:10]   [方法6] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:03:10]   [方法6] 检测文件类型: JPEG
+[2026-05-29 17:03:10]   [方法6] 是否为HTML: False
+
+======================================================================
+  各方法下载结果汇总
+======================================================================
+[2026-05-29 17:03:10]   方法1_标准Referer: ✓ 正常图片 | 类型=JPEG | 大小=7068643 bytes
+[2026-05-29 17:03:10]     已保存: CHECK_方法1_标准Referer_mode3_559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:03:10]   方法2_无Referer: ✗ HTML内容 | 类型=UNKNOWN | 大小=46676 bytes
+[2026-05-29 17:03:10]     已保存: CHECK_方法2_无Referer_mode3_559dabf39b9f8402ec8866c63ea0c311.jpg.html
+[2026-05-29 17:03:10]   方法3_新Session: ✓ 正常图片 | 类型=JPEG | 大小=7068643 bytes
+[2026-05-29 17:03:10]     已保存: CHECK_方法3_新Session_mode3_559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:03:10]   方法4_Accept_image: ✓ 正常图片 | 类型=JPEG | 大小=7068643 bytes
+[2026-05-29 17:03:10]     已保存: CHECK_方法4_Accept_image_mode3_559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:03:10]   方法5_无Cookie: ✓ 正常图片 | 类型=JPEG | 大小=7068643 bytes
+[2026-05-29 17:03:10]     已保存: CHECK_方法5_无Cookie_mode3_559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:03:10]   方法6_Stream: ✓ 正常图片 | 类型=JPEG | 大小=7068643 bytes
+[2026-05-29 17:03:10]     已保存: CHECK_方法6_Stream_mode3_559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:03:10] ✓ Mode3 图片1下载成功 (使用方法1_标准Referer), 大小=7068643 bytes
+
+======================================================================
+  Mode3 图片 #2 (id=12801038)
+======================================================================
+[2026-05-29 17:03:11]   [Mode3详情页] 请求URL: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:03:11]   [Mode3详情页] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:03:12]   [Mode3详情页] 状态码: 200
+[2026-05-29 17:03:12]   [Mode3详情页] 耗时: 0.96s
+[2026-05-29 17:03:12]   [Mode3详情页] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:03:12]   [Mode3详情页] Content-Length: N/A
+[2026-05-29 17:03:12]   [Mode3详情页] Server: nginx/1.22.1
+[2026-05-29 17:03:12]   [Mode3详情页] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:03:11 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:03:11 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:03:12]   [Mode3详情页] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:03:12]   [Mode3详情页] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:03:12] 图片URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:03:12]   --- 方法1: 标准下载(带Referer) ---
+[2026-05-29 17:03:12]   [方法1] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:03:12]   [方法1] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:03:12]   [方法1] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:03:23]   [方法1] 状态码: 200
+[2026-05-29 17:03:23]   [方法1] 耗时: 10.83s
+[2026-05-29 17:03:23]   [方法1] Content-Type: image/jpeg
+[2026-05-29 17:03:23]   [方法1] Content-Length: 2293780
+[2026-05-29 17:03:23]   [方法1] Server: nginx/1.22.1
+[2026-05-29 17:03:23]   [方法1] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:03:12 GMT
+    Content-Type: image/jpeg
+    Content-Length: 2293780
+    Last-Modified: Wed, 15 Oct 2025 19:15:08 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:03:23]   [方法1] 响应Cookies: {}
+[2026-05-29 17:03:23]   [方法1] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:03:23]   [方法1] 内容长度: 2293780 bytes
+[2026-05-29 17:03:23]   [方法1] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:03:23]   [方法1] 检测文件类型: JPEG
+[2026-05-29 17:03:23]   [方法1] 是否为HTML: False
+[2026-05-29 17:03:23]   --- 方法2: 不带Referer ---
+[2026-05-29 17:03:23]   [方法2] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:03:23]   [方法2] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:03:24]   [方法2] 状态码: 200
+[2026-05-29 17:03:24]   [方法2] 耗时: 1.30s
+[2026-05-29 17:03:24]   [方法2] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:03:24]   [方法2] Content-Length: N/A
+[2026-05-29 17:03:24]   [方法2] Server: nginx/1.22.1
+[2026-05-29 17:03:24]   [方法2] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:03:23 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:03:23 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:03:24]   [方法2] 重定向链 (2 次):
+    302 -> https://gelbooru.com/hotlink.php?hash=/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+    302 -> index.php?page=post&s=view&id=12801038
+[2026-05-29 17:03:24]   [方法2] 最终URL: https://gelbooru.com/index.php?page=post&s=view&id=12801038
+[2026-05-29 17:03:24]   [方法2] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:03:24]   [方法2] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:03:24]   [方法2] 内容长度: 33879 bytes
+[2026-05-29 17:03:24]   [方法2] 前200字节(UTF-8): '<!DOCTYPE html><html lang="en">\n\t<head>\n\t\t<meta charset="UTF-8">\n\t\t<title>shiraiyu, megumin, kono subarashii sekai ni shukufuku wo!, absurdres, commentary, highres, 1girl, :o, bandaged leg, bandages, '
+[2026-05-29 17:03:24]   [方法2] ⚠ 内容以HTML标记开头!
+[2026-05-29 17:03:24]   [方法2] ⚠ 前500字节中包含<html>标记!
+[2026-05-29 17:03:24]   [方法2] ⚠ 前500字节中包含<head>标记!
+[2026-05-29 17:03:24]   [方法2] 检测文件类型: UNKNOWN
+[2026-05-29 17:03:24]   [方法2] 是否为HTML: True
+[2026-05-29 17:03:24]   [方法2] HTML标题: shiraiyu, megumin, kono subarashii sekai ni shukufuku wo!, absurdres, commentary, highres, 1girl, :o, bandaged leg, bandages, bare shoulders, belt, black belt, black thighhighs, blunt bangs, blush, brown hair, collarbone, dress, feet out of frame, hair between eyes, hugging own legs, knees together feet apart, legs up, loli, long sleeves, looking at viewer, lying, missing headwear, off-shoulder dress, off shoulder, on back, open mouth, red dress, red eyes, short dress, short hair with long locks, simple background, single thighhigh, solo, thighhighs, thighs, white background, wide sleeves, zettai ryouiki - Image View -  | Gelbooru - Anime Art & Hentai Gallery - Free to Explore
+  [方法2] HTML前500字符:
+<!DOCTYPE html><html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>shiraiyu, megumin, kono subarashii sekai ni shukufuku wo!, absurdres, commentary, highres, 1girl, :o, bandaged leg, bandages, bare shoulders, belt, black belt, black thighhighs, blunt bangs, blush, brown hair, collarbone, dress, feet out of frame, hair between eyes, hugging own legs, knees together feet apart, legs up, loli, long sleeves, looking at viewer, lying, missing headwear, off-shoulder dress, off shoulder, on back
+[2026-05-29 17:03:24]   --- 方法3: 全新Session ---
+[2026-05-29 17:03:24]   [方法3] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:03:24]   [方法3] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:03:24]   [方法3] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:03:28]   [方法3] 状态码: 200
+[2026-05-29 17:03:28]   [方法3] 耗时: 4.22s
+[2026-05-29 17:03:28]   [方法3] Content-Type: image/jpeg
+[2026-05-29 17:03:28]   [方法3] Content-Length: 2293780
+[2026-05-29 17:03:28]   [方法3] Server: nginx/1.22.1
+[2026-05-29 17:03:28]   [方法3] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:03:25 GMT
+    Content-Type: image/jpeg
+    Content-Length: 2293780
+    Last-Modified: Wed, 15 Oct 2025 19:15:08 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:03:28]   [方法3] 响应Cookies: {}
+[2026-05-29 17:03:28]   [方法3] Session Cookies: {}
+[2026-05-29 17:03:28]   [方法3] 内容长度: 2293780 bytes
+[2026-05-29 17:03:28]   [方法3] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:03:28]   [方法3] 检测文件类型: JPEG
+[2026-05-29 17:03:28]   [方法3] 是否为HTML: False
+[2026-05-29 17:03:28]   --- 方法4: 模拟浏览器图片请求(Accept: image/*) ---
+[2026-05-29 17:03:28]   [方法4] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:03:28]   [方法4] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29", "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "en-US,en;q=0.9"}
+[2026-05-29 17:03:28]   [方法4] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:03:35]   [方法4] 状态码: 200
+[2026-05-29 17:03:35]   [方法4] 耗时: 6.78s
+[2026-05-29 17:03:35]   [方法4] Content-Type: image/jpeg
+[2026-05-29 17:03:35]   [方法4] Content-Length: 2293780
+[2026-05-29 17:03:35]   [方法4] Server: nginx/1.22.1
+[2026-05-29 17:03:35]   [方法4] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:03:28 GMT
+    Content-Type: image/jpeg
+    Content-Length: 2293780
+    Last-Modified: Wed, 15 Oct 2025 19:15:08 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:03:35]   [方法4] 响应Cookies: {}
+[2026-05-29 17:03:35]   [方法4] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:03:35]   [方法4] 内容长度: 2293780 bytes
+[2026-05-29 17:03:35]   [方法4] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:03:35]   [方法4] 检测文件类型: JPEG
+[2026-05-29 17:03:35]   [方法4] 是否为HTML: False
+[2026-05-29 17:03:35]   --- 方法5: 不带Cookie ---
+[2026-05-29 17:03:35]   [方法5] 请求URL: https://img2.gelbooru.com/images/73/47/734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:03:35]   [方法5] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:03:35]   [方法5] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12801038&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:04:39]   [方法5] 状态码: 200
+[2026-05-29 17:04:39]   [方法5] 耗时: 64.35s
+[2026-05-29 17:04:39]   [方法5] Content-Type: image/jpeg
+[2026-05-29 17:04:39]   [方法5] Content-Length: 2293780
+[2026-05-29 17:04:39]   [方法5] Server: nginx/1.22.1
+[2026-05-29 17:04:39]   [方法5] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:03:41 GMT
+    Content-Type: image/jpeg
+    Content-Length: 2293780
+    Last-Modified: Wed, 15 Oct 2025 19:15:08 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:04:39]   [方法5] 响应Cookies: {}
+[2026-05-29 17:04:39]   [方法5] Session Cookies: {}
+[2026-05-29 17:04:39]   [方法5] 内容长度: 2293780 bytes
+[2026-05-29 17:04:39]   [方法5] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:04:39]   [方法5] 检测文件类型: JPEG
+[2026-05-29 17:04:39]   [方法5] 是否为HTML: False
+[2026-05-29 17:04:39]   --- 方法6: Stream模式下载 ---
+[2026-05-29 17:04:41]   [方法6] 状态码: 200
+[2026-05-29 17:04:41]   [方法6] Content-Type: image/jpeg
+[2026-05-29 17:04:41]   [方法6] Content-Length: 2293780
+[2026-05-29 17:04:46]   [方法6] 实际接收: 2293780 bytes, 耗时: 6.67s
+[2026-05-29 17:04:46]   [方法6] 内容长度: 2293780 bytes
+[2026-05-29 17:04:46]   [方法6] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x00C\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00C\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01��\x00\x11\x08\x0b\x1b\t|\x03\x01\x11\x00\x02\x11\x01\x03\x11\x01��\x00\x1f\x00\x00\x01\x05\x01\x01\x01\x01\x01\x01\x00\x00\x00\x00\x00\x00\x00\x00\x01'
+[2026-05-29 17:04:46]   [方法6] 检测文件类型: JPEG
+[2026-05-29 17:04:46]   [方法6] 是否为HTML: False
+
+======================================================================
+  各方法下载结果汇总
+======================================================================
+[2026-05-29 17:04:46]   方法1_标准Referer: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:04:46]     已保存: CHECK_方法1_标准Referer_mode3_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:04:46]   方法2_无Referer: ✗ HTML内容 | 类型=UNKNOWN | 大小=33879 bytes
+[2026-05-29 17:04:46]     已保存: CHECK_方法2_无Referer_mode3_734764492c185ea06435bce6160fde3c.jpg.html
+[2026-05-29 17:04:46]   方法3_新Session: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:04:46]     已保存: CHECK_方法3_新Session_mode3_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:04:46]   方法4_Accept_image: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:04:46]     已保存: CHECK_方法4_Accept_image_mode3_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:04:46]   方法5_无Cookie: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:04:46]     已保存: CHECK_方法5_无Cookie_mode3_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:04:46]   方法6_Stream: ✓ 正常图片 | 类型=JPEG | 大小=2293780 bytes
+[2026-05-29 17:04:46]     已保存: CHECK_方法6_Stream_mode3_734764492c185ea06435bce6160fde3c.jpg
+[2026-05-29 17:04:46] ✓ Mode3 图片2下载成功 (使用方法1_标准Referer), 大小=2293780 bytes
+
+======================================================================
+  Mode3 图片 #3 (id=12797804)
+======================================================================
+[2026-05-29 17:04:47]   [Mode3详情页] 请求URL: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:04:47]   [Mode3详情页] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:04:49]   [Mode3详情页] 状态码: 200
+[2026-05-29 17:04:49]   [Mode3详情页] 耗时: 2.16s
+[2026-05-29 17:04:49]   [Mode3详情页] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:04:49]   [Mode3详情页] Content-Length: N/A
+[2026-05-29 17:04:49]   [Mode3详情页] Server: nginx/1.22.1
+[2026-05-29 17:04:49]   [Mode3详情页] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:04:48 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:04:48 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:04:49]   [Mode3详情页] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:04:49]   [Mode3详情页] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:04:49] 图片URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:04:49]   --- 方法1: 标准下载(带Referer) ---
+[2026-05-29 17:04:49]   [方法1] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:04:49]   [方法1] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:04:49]   [方法1] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:04:55]   [方法1] 状态码: 200
+[2026-05-29 17:04:55]   [方法1] 耗时: 5.52s
+[2026-05-29 17:04:55]   [方法1] Content-Type: image/jpeg
+[2026-05-29 17:04:55]   [方法1] Content-Length: 4433945
+[2026-05-29 17:04:55]   [方法1] Server: nginx/1.22.1
+[2026-05-29 17:04:55]   [方法1] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:04:49 GMT
+    Content-Type: image/jpeg
+    Content-Length: 4433945
+    Last-Modified: Wed, 15 Oct 2025 01:45:36 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:04:55]   [方法1] 响应Cookies: {}
+[2026-05-29 17:04:55]   [方法1] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:04:55]   [方法1] 内容长度: 4433945 bytes
+[2026-05-29 17:04:55]   [方法1] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:04:55]   [方法1] 检测文件类型: JPEG
+[2026-05-29 17:04:55]   [方法1] 是否为HTML: False
+[2026-05-29 17:04:55]   --- 方法2: 不带Referer ---
+[2026-05-29 17:04:55]   [方法2] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:04:55]   [方法2] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:04:56]   [方法2] 状态码: 200
+[2026-05-29 17:04:56]   [方法2] 耗时: 1.51s
+[2026-05-29 17:04:56]   [方法2] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:04:56]   [方法2] Content-Length: N/A
+[2026-05-29 17:04:56]   [方法2] Server: nginx/1.22.1
+[2026-05-29 17:04:56]   [方法2] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:04:56 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Cache-Control: no-store, no-cache, must-revalidate
+    Pragma: no-cache
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:04:56 GMT; Max-Age=31536000; path=/
+    X-Frame-Options: sameorigin
+[2026-05-29 17:04:56]   [方法2] 重定向链 (2 次):
+    302 -> https://gelbooru.com/hotlink.php?hash=/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+    302 -> index.php?page=post&s=view&id=12797804
+[2026-05-29 17:04:56]   [方法2] 最终URL: https://gelbooru.com/index.php?page=post&s=view&id=12797804
+[2026-05-29 17:04:56]   [方法2] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:04:56]   [方法2] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:04:56]   [方法2] 内容长度: 52020 bytes
+[2026-05-29 17:04:56]   [方法2] 前200字节(UTF-8): '<!DOCTYPE html><html lang="en">\n\t<head>\n\t\t<meta charset="UTF-8">\n\t\t<title>shiraiyu, seia (blue archive), seia (swimsuit) (blue archive), blue archive, absurdres, commentary, highres, 1girl, absurdly l'
+[2026-05-29 17:04:56]   [方法2] ⚠ 内容以HTML标记开头!
+[2026-05-29 17:04:56]   [方法2] ⚠ 前500字节中包含<html>标记!
+[2026-05-29 17:04:56]   [方法2] ⚠ 前500字节中包含<head>标记!
+[2026-05-29 17:04:56]   [方法2] 检测文件类型: UNKNOWN
+[2026-05-29 17:04:56]   [方法2] 是否为HTML: True
+[2026-05-29 17:04:56]   [方法2] HTML标题: shiraiyu, seia (blue archive), seia (swimsuit) (blue archive), blue archive, absurdres, commentary, highres, 1girl, absurdly long tail, adjusting eyewear, animal ear fluff, animal ears, bare legs, bare shoulders, beach, blonde hair, blue sky, breasts, bright pupils, cameltoe, casual one-piece swimsuit, clothing cutout, cloud, collarbone, covered navel, cross halo, day, diamond cutout, dot nose, extra ears, eyelashes, forehead, fox ears, fox girl, fox tail, full body, gluteal fold, gradient eyes, hair ornament, hair over one eye, halo, hand up, hands up, highleg, highleg one-piece swimsuit, jacket, jacket partially removed, loli, long hair, long sidelocks, long sleeves, looking at viewer, multicolored eyes, ocean, off shoulder, offering hand, official alternate costume, official alternate hairstyle, one-piece swimsuit, one eye covered, open clothes, open jacket, open mouth, outdoors, outstretched hand, pink-tinted eyewear, pink eyes, reaching, reaching towards viewer, sandals, side ponytail, sidelocks, sky, small breasts, smile, solo, sparkle, standing, star (symbol), star hair ornament, star ornament, sunglasses, sunlight, swimsuit, tail, tail ornament, thighs, tinted eyewear, very long hair, very long tail, visor cap, wavy hair, wet, wet clothes, white one-piece swimsuit, white pupils, yellow-framed eyewear, yellow halo, yellow jacket, yellow sandals, yellow visor - Image View -  | Gelbooru - Anime Art & Hentai Gallery - Free to Explore
+  [方法2] HTML前500字符:
+<!DOCTYPE html><html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>shiraiyu, seia (blue archive), seia (swimsuit) (blue archive), blue archive, absurdres, commentary, highres, 1girl, absurdly long tail, adjusting eyewear, animal ear fluff, animal ears, bare legs, bare shoulders, beach, blonde hair, blue sky, breasts, bright pupils, cameltoe, casual one-piece swimsuit, clothing cutout, cloud, collarbone, covered navel, cross halo, day, diamond cutout, dot nose, extra ears, eyelashes, foreh
+[2026-05-29 17:04:56]   --- 方法3: 全新Session ---
+[2026-05-29 17:04:56]   [方法3] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:04:56]   [方法3] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:04:56]   [方法3] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:05:00]   [方法3] 状态码: 200
+[2026-05-29 17:05:00]   [方法3] 耗时: 3.56s
+[2026-05-29 17:05:00]   [方法3] Content-Type: image/jpeg
+[2026-05-29 17:05:00]   [方法3] Content-Length: 4433945
+[2026-05-29 17:05:00]   [方法3] Server: nginx/1.22.1
+[2026-05-29 17:05:00]   [方法3] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:04:58 GMT
+    Content-Type: image/jpeg
+    Content-Length: 4433945
+    Last-Modified: Wed, 15 Oct 2025 01:45:36 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:05:00]   [方法3] 响应Cookies: {}
+[2026-05-29 17:05:00]   [方法3] Session Cookies: {}
+[2026-05-29 17:05:00]   [方法3] 内容长度: 4433945 bytes
+[2026-05-29 17:05:00]   [方法3] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:05:00]   [方法3] 检测文件类型: JPEG
+[2026-05-29 17:05:00]   [方法3] 是否为HTML: False
+[2026-05-29 17:05:00]   --- 方法4: 模拟浏览器图片请求(Accept: image/*) ---
+[2026-05-29 17:05:00]   [方法4] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:05:00]   [方法4] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29", "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8", "Accept-Encoding": "gzip, deflate, br", "Accept-Language": "en-US,en;q=0.9"}
+[2026-05-29 17:05:00]   [方法4] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:05:05]   [方法4] 状态码: 200
+[2026-05-29 17:05:05]   [方法4] 耗时: 5.05s
+[2026-05-29 17:05:05]   [方法4] Content-Type: image/jpeg
+[2026-05-29 17:05:05]   [方法4] Content-Length: 4433945
+[2026-05-29 17:05:05]   [方法4] Server: nginx/1.22.1
+[2026-05-29 17:05:05]   [方法4] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:05:00 GMT
+    Content-Type: image/jpeg
+    Content-Length: 4433945
+    Last-Modified: Wed, 15 Oct 2025 01:45:36 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:05:05]   [方法4] 响应Cookies: {}
+[2026-05-29 17:05:05]   [方法4] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:05:05]   [方法4] 内容长度: 4433945 bytes
+[2026-05-29 17:05:05]   [方法4] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:05:05]   [方法4] 检测文件类型: JPEG
+[2026-05-29 17:05:05]   [方法4] 是否为HTML: False
+[2026-05-29 17:05:05]   --- 方法5: 不带Cookie ---
+[2026-05-29 17:05:05]   [方法5] 请求URL: https://img2.gelbooru.com/images/f0/e5/f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:05:05]   [方法5] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Referer": "https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29"}
+[2026-05-29 17:05:05]   [方法5] Referer: https://gelbooru.com/index.php?page=post&s=view&id=12797804&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:05:09]   [方法5] 状态码: 200
+[2026-05-29 17:05:09]   [方法5] 耗时: 3.77s
+[2026-05-29 17:05:09]   [方法5] Content-Type: image/jpeg
+[2026-05-29 17:05:09]   [方法5] Content-Length: 4433945
+[2026-05-29 17:05:09]   [方法5] Server: nginx/1.22.1
+[2026-05-29 17:05:09]   [方法5] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:05:07 GMT
+    Content-Type: image/jpeg
+    Content-Length: 4433945
+    Last-Modified: Wed, 15 Oct 2025 01:45:36 GMT
+    Connection: keep-alive
+    Expires: Thu, 31 Dec 2037 23:55:55 GMT
+    Cache-Control: max-age=315360000
+    X-Frame-Options: sameorigin
+    Accept-Ranges: bytes
+[2026-05-29 17:05:09]   [方法5] 响应Cookies: {}
+[2026-05-29 17:05:09]   [方法5] Session Cookies: {}
+[2026-05-29 17:05:09]   [方法5] 内容长度: 4433945 bytes
+[2026-05-29 17:05:09]   [方法5] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:05:09]   [方法5] 检测文件类型: JPEG
+[2026-05-29 17:05:09]   [方法5] 是否为HTML: False
+[2026-05-29 17:05:09]   --- 方法6: Stream模式下载 ---
+[2026-05-29 17:05:09]   [方法6] 状态码: 200
+[2026-05-29 17:05:09]   [方法6] Content-Type: image/jpeg
+[2026-05-29 17:05:09]   [方法6] Content-Length: 4433945
+[2026-05-29 17:05:13]   [方法6] 实际接收: 4433945 bytes, 耗时: 4.72s
+[2026-05-29 17:05:13]   [方法6] 内容长度: 4433945 bytes
+[2026-05-29 17:05:13]   [方法6] 前200字节(UTF-8): '����\x00\x10JFIF\x00\x01\x01\x00\x00\x01\x00\x01\x00\x00��\x0cXICC_PROFILE\x00\x01\x01\x00\x00\x0cHLino\x02\x10\x00\x00mntrRGB XYZ \x07�\x00\x02\x00\t\x00\x06\x001\x00\x00acspMSFT\x00\x00\x00\x00IEC sRGB\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00��\x00\x01\x00\x00\x00\x00�-HP  \x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x11cprt\x00\x00\x01P\x00\x00\x003desc\x00\x00\x01�\x00\x00\x00lwtpt\x00\x00'
+[2026-05-29 17:05:13]   [方法6] 检测文件类型: JPEG
+[2026-05-29 17:05:13]   [方法6] 是否为HTML: False
+
+======================================================================
+  各方法下载结果汇总
+======================================================================
+[2026-05-29 17:05:13]   方法1_标准Referer: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:05:13]     已保存: CHECK_方法1_标准Referer_mode3_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:05:13]   方法2_无Referer: ✗ HTML内容 | 类型=UNKNOWN | 大小=52020 bytes
+[2026-05-29 17:05:13]     已保存: CHECK_方法2_无Referer_mode3_f0e56592956938b26f680fcb88b85fa7.jpg.html
+[2026-05-29 17:05:13]   方法3_新Session: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:05:13]     已保存: CHECK_方法3_新Session_mode3_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:05:13]   方法4_Accept_image: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:05:13]     已保存: CHECK_方法4_Accept_image_mode3_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:05:13]   方法5_无Cookie: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:05:13]     已保存: CHECK_方法5_无Cookie_mode3_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:05:13]   方法6_Stream: ✓ 正常图片 | 类型=JPEG | 大小=4433945 bytes
+[2026-05-29 17:05:13]     已保存: CHECK_方法6_Stream_mode3_f0e56592956938b26f680fcb88b85fa7.jpg
+[2026-05-29 17:05:13] ✓ Mode3 图片3下载成功 (使用方法1_标准Referer), 大小=4433945 bytes
+[2026-05-29 17:05:14] 
+Mode 3 诊断完成: 成功 3/3
+
+======================================================================
+  额外诊断
+======================================================================
+[2026-05-29 17:05:14] 检查1: Cookie有效性测试
+[2026-05-29 17:05:14]   [Cookie检查] 请求URL: https://gelbooru.com/index.php?page=account&s=options
+[2026-05-29 17:05:14]   [Cookie检查] Headers: {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0", "Cookie": "user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blacklist=scaramouche_%28genshin_impact%29%2520dan_heng_%28honkai%3A_star_rail%29%2520neuvillette_%28genshin_impact%29%2520wriothesley_%28genshin_impact%29%2520freminet_%28genshin_impact%29; comment_threshold=0; post_threshold=0; PHPSESSID=ceab180ffecec111ad6541f0f02c6625"}
+[2026-05-29 17:05:17]   [Cookie检查] 状态码: 200
+[2026-05-29 17:05:17]   [Cookie检查] 耗时: 2.69s
+[2026-05-29 17:05:17]   [Cookie检查] Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:05:17]   [Cookie检查] Content-Length: N/A
+[2026-05-29 17:05:17]   [Cookie检查] Server: nginx/1.22.1
+[2026-05-29 17:05:17]   [Cookie检查] 响应头全部:
+    Server: nginx/1.22.1
+    Date: Fri, 29 May 2026 09:05:17 GMT
+    Content-Type: text/html; charset=UTF-8
+    Transfer-Encoding: chunked
+    Connection: keep-alive
+    Content-Encoding: identity
+    Expires: Thu, 19 Nov 1981 08:52:00 GMT
+    Set-Cookie: PHPSESSID=ceab180ffecec111ad6541f0f02c6625; expires=Sat, 29 May 2027 09:05:17 GMT; Max-Age=31536000; path=/
+    Cache-Control: store, cache
+    Pragma: cache
+    X-Frame-Options: sameorigin
+[2026-05-29 17:05:17]   [Cookie检查] 响应Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:05:17]   [Cookie检查] Session Cookies: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:05:17]   ✓ Cookie似乎有效
+[2026-05-29 17:05:17] 
+检查2: CDN域名连通性测试
+[2026-05-29 17:05:21]   https://img4.gelbooru.com: ✗ HTTPSConnectionPool(host='img4.gelbooru.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:992)')))
+[2026-05-29 17:05:23]   https://img3.gelbooru.com: ✗ HTTPSConnectionPool(host='img3.gelbooru.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:992)')))
+[2026-05-29 17:05:25]   https://video-cdn3.gelbooru.com: ✗ HTTPSConnectionPool(host='video-cdn3.gelbooru.com', port=443): Max retries exceeded with url: / (Caused by SSLError(SSLEOFError(8, 'EOF occurred in violation of protocol (_ssl.c:992)')))
+[2026-05-29 17:05:25] 
+检查3: DNS解析
+[2026-05-29 17:05:25]   gelbooru.com: ['192.133.77.145']
+[2026-05-29 17:05:25]   img4.gelbooru.com: ['108.160.169.171']
+[2026-05-29 17:05:25]   img3.gelbooru.com: ['199.16.156.39']
+[2026-05-29 17:05:25] 
+检查4: urllib对比测试
+[2026-05-29 17:05:32]   urllib状态: 200
+[2026-05-29 17:05:32]   urllib Content-Type: text/html; charset=UTF-8
+[2026-05-29 17:05:32]   urllib前100字节: b'<!DOCTYPE html><html lang="en">\n\t<head>\n\t\t<meta charset="UTF-8">\n\t\t<title>shiraiyu | Page: 1 | Gelbo'
+
+======================================================================
+  诊断总结
+======================================================================
+[2026-05-29 17:05:32] 请检查以下文件:
+[2026-05-29 17:05:32]   日志: F:\Pic\Gelbooru\shiraiyu\taglog0
+[2026-05-29 17:05:32]   下载文件目录: F:\Pic\Gelbooru\shiraiyu
+[2026-05-29 17:05:32]   文件名以 CHECK_ 开头的为诊断下载的文件
+[2026-05-29 17:05:32]   对比 mode1_ 和 mode3_ 前缀的文件看是否有差异
+[2026-05-29 17:05:32] 
+[2026-05-29 17:05:32] 常见问题排查:
+[2026-05-29 17:05:32]   1. 如果所有方法下载的都是HTML → Cookie失效或IP被ban
+[2026-05-29 17:05:32]   2. 如果只有带Cookie的方法失败 → Cookie过期
+[2026-05-29 17:05:32]   3. 如果Referer相关的方法失败 → CDN防盗链策略变更
+[2026-05-29 17:05:32]   4. 如果新Session成功但复用Session失败 → Session状态污染
+[2026-05-29 17:05:32]   5. 如果Mode1和Mode3结果一致 → 问题在网络层而非逻辑层
+[2026-05-29 17:05:32]   6. 如果Content-Type是text/html但状态码200 → CDN返回挑战页面
