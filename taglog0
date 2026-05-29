@@ -1,0 +1,277 @@
+
+======================================================================
+  check_mode1.py - 精确复制Mode1流程诊断
+======================================================================
+[2026-05-29 17:41:57] tag: shiraiyu | replace_tag: shiraiyu
+[2026-05-29 17:41:57] save_dir: F:\Pic\Gelbooru\shiraiyu
+[2026-05-29 17:41:57] Python: 3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)]
+[2026-05-29 17:41:57] requests: 2.31.0
+[2026-05-29 17:41:57] BASE_URL: https://gelbooru.com/index.php?page=post&s=list&tags=
+
+======================================================================
+  步骤1: 创建Session (复制WebClient.__init__逻辑)
+======================================================================
+[2026-05-29 17:41:57] Session创建完成
+[2026-05-29 17:41:57] session.headers:
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0
+    Accept-Encoding: gzip, deflate
+    Accept: */*
+    Connection: keep-alive
+    Cookie: user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenef
+[2026-05-29 17:41:57] Session cookie jar (初始): {}
+
+======================================================================
+  步骤2: 获取列表页 (模拟 web.get_soup)
+======================================================================
+[2026-05-29 17:41:57] 列表页URL: https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu+-futanari+-xiao_(genshin_impact)+-azarashi_(kkuh3353)+-furry+-arlecchino_(genshin_impact)+-clorinde_(genshin_impact)+-emilie_(genshin_impact)+-zhezhi_(wuthering_waves)+-matou_sakura+-dairi+-jinx_(league_of_legends)
+[2026-05-29 17:42:00] 列表页状态: 200, 大小: 53013 chars
+[2026-05-29 17:42:00] Session cookie jar (列表页后): {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:42:00] 找到 17 张图片
+[2026-05-29 17:42:00] 目标图片: id=14177374
+  href: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+
+======================================================================
+  步骤3: 获取详情页 (模拟 web.get_soup)
+======================================================================
+[2026-05-29 17:42:00] 详情页URL: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+[2026-05-29 17:42:00] 详情页状态: 200, 大小: 48193 chars
+[2026-05-29 17:42:00] Session cookie jar (详情页后): {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+
+======================================================================
+  步骤4: 提取元数据 (_extract_metadata)
+======================================================================
+[2026-05-29 17:42:00] pic_time: 2026-05-29 03:15:07
+[2026-05-29 17:42:00] pic_id: 14177374
+[2026-05-29 17:42:00] pic_url (Original image): https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:00] pic_filename: 559dabf39b9f8402ec8866c63ea0c311.jpg
+
+======================================================================
+  步骤5: 下载图片 - 精确对比各种方式
+======================================================================
+[2026-05-29 17:42:00] 图片URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:00] Referer将设为 (detail_url): https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin_impact%29+-azarashi_%28kkuh3353%29+-furry+-arlecchino_%28genshin_impact%29+-clorinde_%28genshin_impact%29+-emilie_%28genshin_impact%29+-zhezhi_%28wuthering_waves%29+-matou_sakura+-dairi+-jinx_%28league_of_legends%29
+
+======================================================================
+  测试A: 当前代码逻辑 (allow_redirects=False, 复用session)
+======================================================================
+[2026-05-29 17:42:00]   [测试A] === 发送请求 ===
+[2026-05-29 17:42:00]   [测试A] URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:00]   [测试A] allow_redirects: False
+[2026-05-29 17:42:00]   [测试A] timeout: 60
+[2026-05-29 17:42:00]   [测试A] 请求头:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0
+      Cookie: user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blackli...
+      Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin...
+[2026-05-29 17:42:00]   [测试A] Session cookie jar: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:42:00]   [测试A] Session headers (keys): ['User-Agent', 'Accept-Encoding', 'Accept', 'Connection', 'Cookie']
+[2026-05-29 17:42:04]   [测试A] 耗时: 3.57s
+[2026-05-29 17:42:04]   [测试A] Status: 200
+[2026-05-29 17:42:04]   [测试A] URL (最终): https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:04]   [测试A] Content-Type: image/jpeg
+[2026-05-29 17:42:04]   [测试A] Content-Length: 7068643
+[2026-05-29 17:42:04]   [测试A] Server: nginx/1.22.1
+[2026-05-29 17:42:04]   [测试A] 所有响应头:
+      Server: nginx/1.22.1
+      Date: Fri, 29 May 2026 09:42:02 GMT
+      Content-Type: image/jpeg
+      Content-Length: 7068643
+      Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+      Connection: keep-alive
+      Expires: Thu, 31 Dec 2037 23:55:55 GMT
+      Cache-Control: max-age=315360000
+      X-Frame-Options: sameorigin
+      Accept-Ranges: bytes
+[2026-05-29 17:42:04]   [测试A] 响应cookies: {}
+[2026-05-29 17:42:04]   [测试A] 内容长度: 7068643 bytes
+[2026-05-29 17:42:04]   [测试A] 魔术字节检测: JPEG
+[2026-05-29 17:42:04]   [测试A] 前20字节hex: ffd8ffe000104a46494600010100000100010000
+[2026-05-29 17:42:04]   [测试A] strip后前5字节: b'\xff\xd8\xff\xe0\x00'
+[2026-05-29 17:42:04]   [测试A] 判定为HTML: False
+[2026-05-29 17:42:04]   [测试A] ✓ 下载成功! 类型=JPEG, 大小=7068643 bytes
+[2026-05-29 17:42:04]   保存: CHECK_A_559dabf39b9f8402ec8866c63ea0c311.jpg (7068643 bytes)
+
+======================================================================
+  测试B: 旧代码逻辑 (allow_redirects=True, 复用session)
+======================================================================
+[2026-05-29 17:42:04]   [测试B] === 发送请求 ===
+[2026-05-29 17:42:04]   [测试B] URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:04]   [测试B] allow_redirects: True
+[2026-05-29 17:42:04]   [测试B] timeout: 60
+[2026-05-29 17:42:04]   [测试B] 请求头:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0
+      Cookie: user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blackli...
+      Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin...
+[2026-05-29 17:42:04]   [测试B] Session cookie jar: {'PHPSESSID': 'ceab180ffecec111ad6541f0f02c6625'}
+[2026-05-29 17:42:04]   [测试B] Session headers (keys): ['User-Agent', 'Accept-Encoding', 'Accept', 'Connection', 'Cookie']
+[2026-05-29 17:42:05]   [测试B] 耗时: 1.00s
+[2026-05-29 17:42:05]   [测试B] Status: 200
+[2026-05-29 17:42:05]   [测试B] URL (最终): https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:05]   [测试B] Content-Type: image/jpeg
+[2026-05-29 17:42:05]   [测试B] Content-Length: 7068643
+[2026-05-29 17:42:05]   [测试B] Server: nginx/1.22.1
+[2026-05-29 17:42:05]   [测试B] 所有响应头:
+      Server: nginx/1.22.1
+      Date: Fri, 29 May 2026 09:42:04 GMT
+      Content-Type: image/jpeg
+      Content-Length: 7068643
+      Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+      Connection: keep-alive
+      Expires: Thu, 31 Dec 2037 23:55:55 GMT
+      Cache-Control: max-age=315360000
+      X-Frame-Options: sameorigin
+      Accept-Ranges: bytes
+[2026-05-29 17:42:05]   [测试B] 响应cookies: {}
+[2026-05-29 17:42:05]   [测试B] 内容长度: 7068643 bytes
+[2026-05-29 17:42:05]   [测试B] 魔术字节检测: JPEG
+[2026-05-29 17:42:05]   [测试B] 前20字节hex: ffd8ffe000104a46494600010100000100010000
+[2026-05-29 17:42:05]   [测试B] strip后前5字节: b'\xff\xd8\xff\xe0\x00'
+[2026-05-29 17:42:05]   [测试B] 判定为HTML: False
+[2026-05-29 17:42:05]   [测试B] ✓ 下载成功! 类型=JPEG, 大小=7068643 bytes
+[2026-05-29 17:42:05]   保存: CHECK_B_559dabf39b9f8402ec8866c63ea0c311.jpg (7068643 bytes)
+
+======================================================================
+  测试C: 全新session (allow_redirects=False)
+======================================================================
+[2026-05-29 17:42:05]   [测试C] === 发送请求 ===
+[2026-05-29 17:42:05]   [测试C] URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:05]   [测试C] allow_redirects: False
+[2026-05-29 17:42:05]   [测试C] timeout: 60
+[2026-05-29 17:42:05]   [测试C] 请求头:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0
+      Cookie: user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blackli...
+      Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin...
+[2026-05-29 17:42:05]   [测试C] Session cookie jar: {}
+[2026-05-29 17:42:05]   [测试C] Session headers (keys): ['User-Agent', 'Accept-Encoding', 'Accept', 'Connection', 'Cookie']
+[2026-05-29 17:42:08]   [测试C] 耗时: 3.63s
+[2026-05-29 17:42:08]   [测试C] Status: 200
+[2026-05-29 17:42:08]   [测试C] URL (最终): https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:08]   [测试C] Content-Type: image/jpeg
+[2026-05-29 17:42:08]   [测试C] Content-Length: 7068643
+[2026-05-29 17:42:08]   [测试C] Server: nginx/1.22.1
+[2026-05-29 17:42:08]   [测试C] 所有响应头:
+      Server: nginx/1.22.1
+      Date: Fri, 29 May 2026 09:42:06 GMT
+      Content-Type: image/jpeg
+      Content-Length: 7068643
+      Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+      Connection: keep-alive
+      Expires: Thu, 31 Dec 2037 23:55:55 GMT
+      Cache-Control: max-age=315360000
+      X-Frame-Options: sameorigin
+      Accept-Ranges: bytes
+[2026-05-29 17:42:08]   [测试C] 响应cookies: {}
+[2026-05-29 17:42:08]   [测试C] 内容长度: 7068643 bytes
+[2026-05-29 17:42:08]   [测试C] 魔术字节检测: JPEG
+[2026-05-29 17:42:08]   [测试C] 前20字节hex: ffd8ffe000104a46494600010100000100010000
+[2026-05-29 17:42:08]   [测试C] strip后前5字节: b'\xff\xd8\xff\xe0\x00'
+[2026-05-29 17:42:08]   [测试C] 判定为HTML: False
+[2026-05-29 17:42:08]   [测试C] ✓ 下载成功! 类型=JPEG, 大小=7068643 bytes
+[2026-05-29 17:42:08]   保存: CHECK_C_559dabf39b9f8402ec8866c63ea0c311.jpg (7068643 bytes)
+
+======================================================================
+  测试D: 全新session (allow_redirects=True)
+======================================================================
+[2026-05-29 17:42:08]   [测试D] === 发送请求 ===
+[2026-05-29 17:42:08]   [测试D] URL: https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:08]   [测试D] allow_redirects: True
+[2026-05-29 17:42:08]   [测试D] timeout: 60
+[2026-05-29 17:42:08]   [测试D] 请求头:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0
+      Cookie: user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenefits=yup; tag_blackli...
+      Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futanari+-xiao_%28genshin...
+[2026-05-29 17:42:08]   [测试D] Session cookie jar: {}
+[2026-05-29 17:42:08]   [测试D] Session headers (keys): ['User-Agent', 'Accept-Encoding', 'Accept', 'Connection', 'Cookie']
+[2026-05-29 17:42:12]   [测试D] 耗时: 3.68s
+[2026-05-29 17:42:12]   [测试D] Status: 200
+[2026-05-29 17:42:12]   [测试D] URL (最终): https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:42:12]   [测试D] Content-Type: image/jpeg
+[2026-05-29 17:42:12]   [测试D] Content-Length: 7068643
+[2026-05-29 17:42:12]   [测试D] Server: nginx/1.22.1
+[2026-05-29 17:42:12]   [测试D] 所有响应头:
+      Server: nginx/1.22.1
+      Date: Fri, 29 May 2026 09:42:10 GMT
+      Content-Type: image/jpeg
+      Content-Length: 7068643
+      Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+      Connection: keep-alive
+      Expires: Thu, 31 Dec 2037 23:55:55 GMT
+      Cache-Control: max-age=315360000
+      X-Frame-Options: sameorigin
+      Accept-Ranges: bytes
+[2026-05-29 17:42:12]   [测试D] 响应cookies: {}
+[2026-05-29 17:42:12]   [测试D] 内容长度: 7068643 bytes
+[2026-05-29 17:42:12]   [测试D] 魔术字节检测: JPEG
+[2026-05-29 17:42:12]   [测试D] 前20字节hex: ffd8ffe000104a46494600010100000100010000
+[2026-05-29 17:42:12]   [测试D] strip后前5字节: b'\xff\xd8\xff\xe0\x00'
+[2026-05-29 17:42:12]   [测试D] 判定为HTML: False
+[2026-05-29 17:42:12]   [测试D] ✓ 下载成功! 类型=JPEG, 大小=7068643 bytes
+[2026-05-29 17:42:12]   保存: CHECK_D_559dabf39b9f8402ec8866c63ea0c311.jpg (7068643 bytes)
+
+======================================================================
+  测试E: 直接requests.get (无session状态)
+======================================================================
+[2026-05-29 17:43:03]   [测试E] 耗时: 51.15s
+[2026-05-29 17:43:03]   [测试E] Status: 200
+[2026-05-29 17:43:03]   [测试E] URL (最终): https://img2.gelbooru.com/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:43:03]   [测试E] Content-Type: image/jpeg
+[2026-05-29 17:43:03]   [测试E] Content-Length: 7068643
+[2026-05-29 17:43:03]   [测试E] Server: nginx/1.22.1
+[2026-05-29 17:43:03]   [测试E] 所有响应头:
+      Server: nginx/1.22.1
+      Date: Fri, 29 May 2026 09:42:16 GMT
+      Content-Type: image/jpeg
+      Content-Length: 7068643
+      Last-Modified: Fri, 29 May 2026 08:15:07 GMT
+      Connection: keep-alive
+      Expires: Thu, 31 Dec 2037 23:55:55 GMT
+      Cache-Control: max-age=315360000
+      X-Frame-Options: sameorigin
+      Accept-Ranges: bytes
+[2026-05-29 17:43:03]   [测试E] 响应cookies: {}
+[2026-05-29 17:43:03]   [测试E] 内容长度: 7068643 bytes
+[2026-05-29 17:43:03]   [测试E] 魔术字节检测: JPEG
+[2026-05-29 17:43:03]   [测试E] 前20字节hex: ffd8ffe000104a46494600010100000100010000
+[2026-05-29 17:43:03]   [测试E] strip后前5字节: b'\xff\xd8\xff\xe0\x00'
+[2026-05-29 17:43:03]   [测试E] 判定为HTML: False
+[2026-05-29 17:43:03]   保存: CHECK_E_559dabf39b9f8402ec8866c63ea0c311.jpg (7068643 bytes)
+
+======================================================================
+  测试F: http.client 手动请求 (完全绕过requests)
+======================================================================
+[2026-05-29 17:43:03]   [测试F] host=img2.gelbooru.com, path=/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+[2026-05-29 17:43:03]   [测试F] 请求头:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/118.0
+      Referer: https://gelbooru.com/index.php?page=post&s=view&id=14177374&tags=shiraiyu+-futan
+      Cookie: user_id=1258158; pass_hash=02478d3ddede2d29bc01971abe0a0e08c03cb94e; fringeBenef
+      Host: img2.gelbooru.com
+      Connection: keep-alive
+[2026-05-29 17:43:24]   [测试F] 异常: TimeoutError: [WinError 10060] 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+
+======================================================================
+  测试G: 不带Referer (确认hotlink行为)
+======================================================================
+[2026-05-29 17:43:26]   [测试G] Status: 302
+[2026-05-29 17:43:26]   [测试G] ✓ 确认: 无Referer → 302重定向到: https://gelbooru.com/hotlink.php?hash=/images/55/9d/559dabf39b9f8402ec8866c63ea0c311.jpg
+
+======================================================================
+  汇总对比
+======================================================================
+[2026-05-29 17:43:26]   ✓ A: 当前代码(noRedirect+复用session): OK | 7068643 bytes
+[2026-05-29 17:43:26]   ✓ B: 旧代码(redirect+复用session): OK | 7068643 bytes
+[2026-05-29 17:43:26]   ✓ C: 新session(noRedirect): OK | 7068643 bytes
+[2026-05-29 17:43:26]   ✓ D: 新session(redirect): OK | 7068643 bytes
+[2026-05-29 17:43:26]   ✓ E: requests.get无session: OK | 7068643 bytes
+[2026-05-29 17:43:26]   ✗ F: http.client底层: EXCEPTION | 0 bytes
+[2026-05-29 17:43:26]   ✗ G: 无Referer(对照): REDIRECT(expected) | 0 bytes
+
+======================================================================
+  诊断结论指南
+======================================================================
+[2026-05-29 17:43:26] 如果A/B返回HTML但C/D返回图片 → Session被gelbooru.com的cookie污染
+[2026-05-29 17:43:26] 如果A/B/C/D都HTML但E/F返回图片 → requests库Session机制有bug
+[2026-05-29 17:43:26] 如果A/B/C/D/E都HTML但F返回图片 → requests库/系统代理干扰
+[2026-05-29 17:43:26] 如果全部返回图片 → 问题是间歇性的（CDN限流/网络波动）
+[2026-05-29 17:43:26] 如果A返回REDIRECT → CDN有正常重定向,allow_redirects=False误杀
+[2026-05-29 17:43:26] 如果B返回HTML(Content-Type=text/html) → 旧代码检测到HTML应该重试
+[2026-05-29 17:43:26]   但实际mode=1不重试说明download_image没有被调用到你修改后的版本!
+[2026-05-29 17:43:26] 如果G不是REDIRECT → CDN不再检查Referer(规则变了)
