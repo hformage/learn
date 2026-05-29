@@ -1,0 +1,28 @@
+2026-05-29 16:43:06 | Start
+2026-05-29 16:43:09 | shiraiyu created
+2026-05-29 16:43:09 | download page:(1/1/0/0) Page url:https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu
+2026-05-29 16:43:16 | page start: 1/1 https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu+-futanari+-xiao_(genshin_impact)+-azarashi_(kkuh3353)+-furry+-arlecchino_(genshin_impact)+-clorinde_(genshin_impact)+-emilie_(genshin_impact)+-zhezhi_(wuthering_waves)+-matou_sakura+-dairi+-jinx_(league_of_legends)
+2026-05-29 16:43:16 | Total get 17
+2026-05-29 16:43:27 | 1/17(1/1) shiraiyu 1 2026-05-29 03:15:07 559dabf39b9f8402ec8866c63ea0c311.jpg 45.58 Kb
+2026-05-29 16:43:37 | 2/17(1/1) shiraiyu 1 2025-10-15 14:15:08 734764492c185ea06435bce6160fde3c.jpg 33.08 Kb
+2026-05-29 16:43:50 | 3/17(1/1) shiraiyu 1 2025-10-14 20:45:37 f0e56592956938b26f680fcb88b85fa7.jpg 50.8 Kb
+2026-05-29 16:44:02 | 4/17(1/1) shiraiyu 1 2025-10-03 22:32:56 381a2f42955e84fa1eb387e01fe5eff1.jpeg 38.92 Kb
+2026-05-29 16:44:05 | Total time: 1 mins
+2026-05-29 16:44:05 | Total size: 168.39 Kb  avg size: 42.1 Kb
+2026-05-29 16:44:05 | Total download: 4 failed: 0
+2026-05-29 16:44:19 | expired tag: 0
+2026-05-29 16:44:19 | End
+
+2026-05-29 17:19:23 | Start
+2026-05-29 17:19:24 | download page:(1/1/4/0) Page url:https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu
+2026-05-29 17:19:27 | page start: 1/1 https://gelbooru.com/index.php?page=post&s=list&tags=shiraiyu+-futanari+-xiao_(genshin_impact)+-azarashi_(kkuh3353)+-furry+-arlecchino_(genshin_impact)+-clorinde_(genshin_impact)+-emilie_(genshin_impact)+-zhezhi_(wuthering_waves)+-matou_sakura+-dairi+-jinx_(league_of_legends)
+2026-05-29 17:19:27 | Total get 17
+2026-05-29 17:19:35 | 4/17(1/1) shiraiyu 1 2025-10-03 22:32:56 381a2f42955e84fa1eb387e01fe5eff1.jpeg 38.92 Kb
+2026-05-29 17:19:41 | 5/17(1/1) shiraiyu 2 2025-07-07 15:01:45 44e989ff58240f667a7b660cdce475e0.jpg 31.46 Kb
+2026-05-29 17:19:47 | 6/17(1/1) shiraiyu 2 2025-05-30 10:31:33 cdc275ee6b3074d9bf79629cc829d084.jpg 29.27 Kb
+2026-05-29 17:19:51 | Total time: 0 mins
+2026-05-29 17:19:51 | Total size: 99.65 Kb  avg size: 33.22 Kb
+2026-05-29 17:19:51 | Total download: 3 failed: 0
+2026-05-29 17:19:54 | expired tag: 0
+2026-05-29 17:19:54 | End
+
